@@ -22,7 +22,7 @@ header {
   align-items: center;
 }
 
-.icon-container > img {
+.icon-container > a {
   width: 2rem;
   background-color: var(--black);
   padding: 2rem;
@@ -61,13 +61,14 @@ header {
 
 /*------------ SEARCH-BUTTON -----------*/
 
-.search-button {
+.search-button a {
   color: var(--white);
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
-  padding: 2rem;
+  font-size: 2rem;
+  padding: 2.4rem;
   background-color: var(--black);
+  
 }
 
 /*------------ IMAGE-CONTAINER -----------*/
@@ -77,6 +78,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.image-container img{
+    height: 35rem;
 }
 
 .content{
@@ -90,11 +95,11 @@ header {
 }
 
 .content h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .content .buttons{
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 .content .buttons a{
