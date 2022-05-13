@@ -2,6 +2,62 @@
     font-size: 10px;
 }
 
-p{
-    font-size: 10rem;
+/*----------------------- HEADER --------------------------------*/
+
+header{
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
 }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 110rem;
+}
+/*------------ ICON-CONTAINER -----------*/
+
+.icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.icon-container > img{
+    width: 7rem;
+    background-color: var(--black);
+}
+
+/*------------ NAVBAR-CONTAINER -----------*/
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container > a{
+    text-transform: uppercase;
+    color: var(--white);
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    transition: 300ms color ease-in-out;
+}
+
+.navbar-container > a:hover{
+    color: var(--yellow);
+}
+
+.navbar-container > a:last-child{
+    margin-right: 0px;
+}
+
+/*------------ SEARCH-BUTTON -----------*/
+
+.search-button{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+
