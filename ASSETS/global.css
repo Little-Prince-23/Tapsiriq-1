@@ -2,3 +2,7 @@
     font-family: font-light;
     text-decoration: none;
 }
+
+body{
+    background-color: var(--background);
+}

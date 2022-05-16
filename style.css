@@ -68,67 +68,126 @@ header {
   font-size: 2rem;
   padding: 2.4rem;
   background-color: var(--black);
-  
 }
 
 /*------------ IMAGE-CONTAINER -----------*/
 
-.image-container{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.image-container img{
-    height: 35rem;
+.image-container img {
+  height: 35rem;
+  width: 100%;
 }
 
-.content{
-    color: var(--white);
-    font-weight: 100;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
+.content {
+  color: var(--white);
+  font-weight: 100;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
 }
 
-.content h1{
-    font-size: 2.5rem;
+.content h1 {
+  font-size: 2.5rem;
 }
 
-.content .buttons{
-    margin-top: 8rem;
+.content .buttons {
+  margin-top: 8rem;
 }
 
-.content .buttons a{
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 2rem 3rem;
-    margin-right: 2rem;
-    color: var(--white);
-    
+.content .buttons a {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 2rem 3rem;
+  margin-right: 2rem;
+  color: var(--white);
 }
 
-.content .buttons a:last-child{
-    margin-right: 0px;
+.content .buttons a:last-child {
+  margin-right: 0px;
 }
 
-.content .buttons a:hover{
-    color: var(--black);
+.content .buttons a:hover {
+  color: var(--black);
 }
 
-.yellow{
-    background-color: var(--yellow);
-    transition: 300ms all ease-in-out;
+.yellow {
+  background-color: var(--yellow);
+  transition: 300ms all ease-in-out;
 }
 
-.blue{
-    background-color: var(--blue);
-    transition: 300ms all ease-in-out;
+.blue {
+  background-color: var(--blue);
+  transition: 300ms all ease-in-out;
 }
 
+/*----------------------- BODY-1 --------------------------------*/
+main{
+  margin-top: 10rem ;
+}
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10rem;
+}
+
+.main-container h2 {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 10rem;
+  align-items: flex-start;
+}
+
+.blog-posts .post{
+  /* box-shadow: 5px 10px 18px #888888; */
+  background-color: var(--white);
+  width: 30%;
+}
+
+.blog-posts .post img{
+  width: 100%;
+}
+
+.blog-posts .post p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--black);
+  padding: 1.5rem 0rem;
+  transition: 200ms all ease-in-out;
+}
+
+.post:hover p{
+  background-color: var(--blue);
+  font-family: font-bold;
+  color: white;
+}
+
+.post:last-child{
+  position: relative;
+  bottom: 7rem;
+}
+
+.post:nth-child(4){
+  position: relative;
+  bottom: 9rem;
+}
