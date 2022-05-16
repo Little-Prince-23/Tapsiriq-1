@@ -150,6 +150,7 @@ main {
   text-transform: uppercase;
   color: var(--blue);
   font-size: 2rem;
+  font-family: font-bold;
 }
 
 .blog-posts {
@@ -217,6 +218,7 @@ main {
   color: var(--white);
   font-size: 2.5rem;
   text-transform: uppercase;
+  
 }
 
 .background-images {
@@ -237,3 +239,29 @@ main {
 .main-container-2 h2, .background-images{
   margin-bottom: 15rem;
 }
+
+/*------------ TOP-RATED -----------*/
+
+.top-rated{
+  margin: 10rem 0;
+}
+
+.top-rated h2{
+  text-align: center;
+  color: var(--blue);
+  font-size: 2rem;
+  font-family: font-bold;
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+}
+
+.top-rated-images{
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-rated-images img{
+  width: 14%;
+  height: auto;
+}
+
