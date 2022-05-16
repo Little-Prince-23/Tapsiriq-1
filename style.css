@@ -130,9 +130,12 @@ header {
   transition: 300ms all ease-in-out;
 }
 
-/*----------------------- BODY-1 --------------------------------*/
-main{
-  margin-top: 10rem ;
+/*----------------------- MAIN --------------------------------*/
+
+/*------------ MAIN-CONTAINER -----------*/
+
+main {
+  margin-top: 10rem;
 }
 
 .main-container {
@@ -158,13 +161,13 @@ main{
   align-items: flex-start;
 }
 
-.blog-posts .post{
+.blog-posts .post {
   /* box-shadow: 5px 10px 18px #888888; */
   background-color: var(--white);
   width: 30%;
 }
 
-.blog-posts .post img{
+.blog-posts .post img {
   width: 100%;
 }
 
@@ -176,18 +179,61 @@ main{
   transition: 200ms all ease-in-out;
 }
 
-.post:hover p{
+.post:hover p {
   background-color: var(--blue);
   font-family: font-bold;
   color: white;
 }
 
-.post:last-child{
+.post:last-child {
   position: relative;
   bottom: 7rem;
 }
 
-.post:nth-child(4){
+.post:nth-child(4) {
   position: relative;
   bottom: 9rem;
+}
+
+/*------------ MAIN-CONTAINER-2 -----------*/
+
+.main-container-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container-2 img {
+  width: 100%;
+  height: 50rem;
+  opacity: 0.9;
+  object-fit: cover;
+}
+
+.main-container-2 h2 {
+  position: absolute;
+  color: var(--white);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.background-images {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 30rem;
+  align-items: center;
+}
+
+.background-images img {
+  width: 50%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-container-2 h2, .background-images{
+  margin-bottom: 15rem;
 }
